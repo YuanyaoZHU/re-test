@@ -1,3 +1,5 @@
+figure;
+set(gcf,'unit','normalized','position',[0.2,0.2,0.64,0.32]);
 subplot(4,1,4);
 plot(time,value1,'Color',[0 70/255 222/255],'LineWidth',5);
 hold on;
