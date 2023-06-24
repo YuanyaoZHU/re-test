@@ -13,3 +13,11 @@
 - matlab_Figrue_Templete
 
 该文件夹用于储存matlab出图模板
+
+- PanelMeshFunction
+
+该文件夹中包含的程序可以从abaqus的inp文件中提取的Node和Element文件构建Panel单元
+
+- CircleNet
+
+该文件夹包含圆形网衣案例
