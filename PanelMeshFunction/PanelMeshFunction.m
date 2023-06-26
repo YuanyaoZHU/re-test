@@ -2,6 +2,7 @@ clc;
 clear;
 Elements = load('Element.txt');
 Nodes = load('Node.txt');
+Reduces = readmatrix('Reduce.txt');%在水流下游的网衣单元
 
 
 Elements = sortrows(Elements,1); 
@@ -9,7 +10,7 @@ Elements = sortrows(Elements,1);
 Number_Node = size(Nodes,1);
 Number_Element = size(Elements,1);
 
-Panels1 = zeros(Number_Node,19);
+Panels1 = zeros(Number_Node,20);
 
 No_effective_element=0; %无效单元的数量
 
@@ -22,6 +23,7 @@ No_effective_element=0; %无效单元的数量
 % Panels1[10-13]--------- Panel的Node编号的重新排序
 % Panels1[14-16]--------- Panel的方向向量
 % Panels1[17-19]--------- Panel的中心点坐标
+% Panels1[20]------------ 判断Panel单元是否在水流下游
 
 % Nodes的构成
 % Nodes[1] -------------- Nodes编号
@@ -196,6 +198,20 @@ for i=1:size(Elements,1)
     end
 end
 
+%% 本步骤更新了Panels4第20列数据，用于判断该Panels单元是否为下游单元
+[m,n] = size(Reduces);
+for i = 1:m
+    for j = 1:n
+        if(not(isnan(Reduces(i,j))))        
+            if(Elements(Reduces(i,j),4)~=0)
+                Panels4(Elements(Reduces(i,j),4),20) = 1;
+            end
+            if(Elements(Reduces(i,j),5)~=0)
+                Panels4(Elements(Reduces(i,j),5),20) = 1;
+            end
+        end
+    end
+end
 
 %% 输出
 %save Panels.txt -ascii Panels4
