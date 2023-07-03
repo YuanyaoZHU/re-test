@@ -17,11 +17,18 @@
 - PanelMeshFunction
 
   该文件夹中包含的程序可以从abaqus的inp文件中提取的Node和Element文件构建Panel单元
+<<<<<<< HEAD
+=======
+  目前新的PanelMeshFunction对Panel单元添加了第20列，用于判断该Panel单元是否为下游网衣模型，输入文件增加了Reduce.txt文件，该文件为abaqus的集合直接拿出来的，2023.6.26。
+>>>>>>> 2c3ffecbddae317c14a75ba43c5dd727c0cd5584
 
 - CircleNet
 
   该文件夹包含圆形网衣案例
+<<<<<<< HEAD
 
 - NREL_5MW_SPAR_FOWT_property
 
   该文件夹包含了NREL 5MW spar平台浮式风机的完整属性
+=======
+>>>>>>> 2c3ffecbddae317c14a75ba43c5dd727c0cd5584
