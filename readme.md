@@ -32,3 +32,11 @@
   该文件夹包含了NREL 5MW spar平台浮式风机的完整属性
 =======
 >>>>>>> 2c3ffecbddae317c14a75ba43c5dd727c0cd5584
+
+- OC3_Spar_Retardation_Calculation
+
+  该文件夹包含了生成RETARDATION.txt文件的代码，该文件用于计算COMMINS法中的卷积计算
+
+- Turbsim_OC3_SPAR
+
+  该文件夹包含了Turbsim生成风场文件的案例，其中有原始的OC3项目中的风场文件，也包含了Vhub=18m/s Iref = 0.167的风场生成输入文件
