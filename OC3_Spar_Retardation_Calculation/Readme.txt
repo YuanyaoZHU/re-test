@@ -1,0 +1,1 @@
+Spar.m可以对频域阻尼项进行计算，并得到RETARDATION.txt文件，用于TiM水动力计算
