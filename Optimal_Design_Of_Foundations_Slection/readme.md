@@ -1,0 +1,1 @@
+# This code is used for optimization of platform foundation type
