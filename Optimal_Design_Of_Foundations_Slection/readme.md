@@ -1,1 +1,1 @@
-# This code is used for optimization of platform foundation type
+This code is programed by Jiahao Chen, which is used for optimization of platform foundation type.
