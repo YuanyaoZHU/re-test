@@ -40,3 +40,7 @@
 - Turbsim_OC3_SPAR
 
   该文件夹包含了Turbsim生成风场文件的案例，其中有原始的OC3项目中的风场文件，也包含了Vhub=18m/s Iref = 0.167的风场生成输入文件
+
+- PychartsInJupyter
+
+  该文件用于Pycharts再Jupyter中的应用。
